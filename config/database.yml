@@ -24,7 +24,7 @@ default: &default
 development:
   <<: *default
   database: test
-  host: localhost
+  host: postgres
   username: leo
   password: asdf
 
@@ -35,6 +35,6 @@ test:
 production:
   <<: *default
   database: test
-  host: localhost
+  host: postgres
   username: leo
   password: asdf

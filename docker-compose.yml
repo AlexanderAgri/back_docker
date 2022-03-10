@@ -1,6 +1,14 @@
 version: "3.8"
 
 services:
+  api:
+    build: .
+    image: back-docker
+    restart: "no"
+    ports:
+      - "3000:3000"
+    depends_on:
+      - postgres
   postgres:
     image: postgres
     restart: always
